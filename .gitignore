@@ -1,0 +1,30 @@
+final public class ImmutableClass{
+   
+   private String name;
+   private int age;
+   
+   private ImmutableClass(final String name, final int age){
+    this.age = age;
+    this.name = name;
+   }
+   
+   
+   public int getAge(){
+     return age;
+   }
+   
+   public String getName(){
+      return name;   
+   }
+   
+   public void setName(final String name){
+      this.name=name;
+   }
+
+  public static void main(String[] args){
+    ImmutableClass object = ImmutableClass("JavaCode",101);
+    
+    object.setName("CodeChange");
+  
+  }
+}
